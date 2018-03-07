@@ -3,12 +3,12 @@ Practice DEFINING and CALLING
      FUNCTIONS
 
 Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         their colleagues and Aaron Kondrat.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 ###############################################################################
 #
-# TODO: 2.
+# DONE: 2.
 #   Allow this module to use the  rosegraphics.py  module by marking the
 #     src
 #   folder in this project as a "Sources Root", as follows:
@@ -32,6 +32,8 @@ def main():
     window = rg.TurtleWindow()
 
     turtle1()
+    turtle4()
+    turtle5()
     turtle3()
     turtle2()
     turtle2()
@@ -104,9 +106,32 @@ def turtle3():
     maja.end_fill()
 
 
+def turtle4():
+    monkey = rg.SimpleTurtle()
+    monkey.pen = rg.Pen('yellow', 15)
+    monkey.right(90)
+    monkey.forward(150)
+    monkey.left(45)
+    monkey.backward(75)
+
+
+def turtle5():
+    frank = rg.SimpleTurtle()
+    will = rg.SimpleTurtle()
+    frank.pen = rg.Pen('magenta', 40)
+    will.pen = rg.Pen('gray', 5)
+    frank.forward(250)
+    will.right(45)
+    will.backward(75)
+    frank.left(75)
+    frank.forward(175)
+    will.left(17)
+    will.forward(92)
+
+
 ###############################################################################
 #
-# TODO: 3.
+# DONE: 3.
 #   READ the code above.  Be sure you understand:
 #     -- How many functions are defined above?
 #           (Answer: 4)
@@ -138,7 +163,7 @@ def turtle3():
 
 ###############################################################################
 #
-# TODO: 4.
+# DONE: 4.
 #   Define another function,
 #   immediately below the end of the definition of   turtle3   above.
 #   Name your new function   turtle4.
@@ -168,7 +193,7 @@ def turtle3():
 
 ###############################################################################
 #
-# TODO: 5.
+# DONE: 5.
 #   Add a line to   main   that CALLS your new function immediately
 #   AFTER  main  calls turtle1.  So:
 #     -- the SimpleTurtle from turtle1 should move,
@@ -184,7 +209,7 @@ def turtle3():
 
 ###############################################################################
 #
-# TODO: 6.
+# DONE: 6.
 #   The previous two TODOs IMPLEMENTED a function (TO-DO 4)
 #   and TESTED that function (TO-DO 5).
 #
@@ -211,7 +236,7 @@ def turtle3():
 
 ###############################################################################
 #
-# TODO: 7.
+# DONE: 7.
 #   COMMIT-and-PUSH your work (after changing this TO-DO to DONE).
 #
 #   As a reminder, here is how you should do so:
